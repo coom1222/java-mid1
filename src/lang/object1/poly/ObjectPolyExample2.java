@@ -1,29 +1,27 @@
 package lang.object1.poly;
 
-public class ObjectPolyExample1 {
+public class ObjectPolyExample2 {
 
     public static void main(String[] args) {
         Dog dog = new Dog();
         Car car = new Car();
+        Object object = new Object();   // Object도 인스턴스를 만들 수 있다.
 
-        action(car);
-        action(dog);
+        Object[] objects = {dog, car, object};
+        /*Object[] objects = new Object[3];
+        objects[0] = dog;
+        objects[1] = car;
+        objects[2] = object;
+        */
+
+        size(objects);
+
     }
 
-    private static void action(Object obj) {
-
-        // 객체에 맞는 다운캐스팅이 필요하다
-        // obj는 최상위 클래스이므로 다운캐스팅
-        if(obj instanceof Dog dog) {
-            dog.sound();
-        } else if(obj instanceof Car car) {
-            car.move();
-        }
+    // 모든 객체를 저장할 수 있는 배열을 만들었다. 따라서 size()메서드는 자바를 사용하는 곳이라면 어디든지 사용될 수 있다.
+    private static void size(Object[] objects) {
+        System.out.println("전달된 객체의 수는: " + objects.length);
     }
+
+
 }
-/*
-instanceof는 객체 타입을 확인하는 연산자
-형변환 가능 여부를 확인하며 T/F로 결과 반환
-주로 상속관계에서 부모객체인지 자식객체인지 확인하는데 사용
-객체 instanceof 클래스 형태로 선언한다
- */
