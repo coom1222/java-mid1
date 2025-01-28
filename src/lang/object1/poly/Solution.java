@@ -15,7 +15,10 @@ class Solution {
         Solution sol = new Solution();
         String[] arr = {"a", "b", "c"};
         System.out.println(sol.solution(arr));
+
+
     }
+
 
 }
 
