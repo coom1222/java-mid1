@@ -6,10 +6,10 @@ public class AutoboxingMain2 {
         // Primitive -> Wrapper
         int value = 7;
         Integer boxedValue = value;    // 오토 박싱(Auto-boxing) | 자바에서 이젠 지원해준다.
-
+                                       // Integer.valueOf(value)
         // Wrapper -> Primitive
         int unboxedValue = boxedValue;   // 오토 언박싱(Auto-unboxing)
-
+                                        // boxedValue.intValue()
         System.out.println("boxedValue = " + boxedValue);
         System.out.println("unboxedValue = " + unboxedValue);
     }
