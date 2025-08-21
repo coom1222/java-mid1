@@ -1,6 +1,7 @@
-package enumeration.ex0;
+package enumeration.ex1;
 
-public class StringGradeEx0_2 {
+
+public class StringGradeEx1_2 {
 
     public static void main(String[] args) {
         int price = 10000;
@@ -21,9 +22,3 @@ public class StringGradeEx0_2 {
     }
 
 }
-
-/*
-String 사용 시 타입 안정성 부족 분제
-- 값의 제한 부족 : String으로 상태나 카테고리를 표현하면, 잘못된 문자열을 실수로 입력할 가능성이 있다.
-- 컴파일 시 오류 감지 불가 : 이러한 잘못된 값은 컴파일 시점에는 감지되지 않고 런타임에서만 문제만 발견되기 때문에 디버깅이 어려워질 수 있다.
- */
