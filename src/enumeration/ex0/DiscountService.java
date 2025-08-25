@@ -18,5 +18,4 @@ public class DiscountService {
         // 10000 * (20/100) = 2000
         return price * discountPercentage / 100;
     }
-
 }
