@@ -10,7 +10,8 @@ public class ClassGradeEx3_2 {
 
         // Grade grade = new Grade();  // enum은 외부에서 생성 불가
         // 오류 메시지 : enum classes may not be instantiated
-        int result = discountService.discount(grade, price);
+       /* int result = discountService.discount(grade, price);
         System.out.println("newclassGrade 할인금액 " + result);
+        */
     }
 }
