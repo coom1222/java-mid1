@@ -14,7 +14,8 @@ public class HttpStatusMain {
         if (status == null) {
             System.out.println("정의되지 않은 코드");
         } else {
-            System.out.println("status = " + status);
+            System.out.println(status.getCode() + " " + status.getMessage());
+            System.out.println("isSuccess = " + status.isSuccess());
         }
     }
 }
