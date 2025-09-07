@@ -13,7 +13,7 @@ public class isSupportedMain2 {
         if (supported) {
             int minute = now.get(ChronoField.SECOND_OF_MINUTE);
             System.out.println("minute = " + minute);
-        }ㅏ
+        }
     }
 }
 /*
