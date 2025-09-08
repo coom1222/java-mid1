@@ -3,6 +3,9 @@ package time;
 import java.time.LocalTime;
 import java.time.temporal.ChronoUnit;
 
+// TemporalUnit 인터페이스는 날짜와 시간을 측정하는 단위를 나타낸다.
+// import java.time.temporal.ChronoUnit 열거형으로 구현되어 있다.
+// ChronoUnit은 다양한 시간 단위를 제공한다. (Unit은 단위이다)
 public class ChronoUnitMain {
 
     public static void main(String[] args) {
