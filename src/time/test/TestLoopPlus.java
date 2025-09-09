@@ -1,4 +1,4 @@
-package time.ex;
+package time.test;
 
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;

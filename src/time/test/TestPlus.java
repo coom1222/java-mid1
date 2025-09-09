@@ -1,7 +1,6 @@
-package time.ex;
+package time.test;
 
 import java.time.LocalDateTime;
-import java.time.LocalTime;
 
 public class TestPlus {
 
