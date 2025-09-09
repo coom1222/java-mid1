@@ -4,7 +4,7 @@ import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.temporal.TemporalAdjusters;
 
-// 설명 꼭 듣기
+// 설명 꼭 듣기 + 난이도 있는 것 맞음
 public class TestAdjusters {
 
     public static void main(String[] args) {
@@ -12,9 +12,10 @@ public class TestAdjusters {
         int month = 1;
 
         LocalDate dt = LocalDate.of(year, month, 1);
+        DayOfWeek fistDayOfWeek = dt.getDayOfWeek();    // getDayOfWeek() : 주어진 날짜가 무슨 요일인지
         DayOfWeek lastDayOfWeek = dt.with(TemporalAdjusters.lastDayOfMonth()).getDayOfWeek();
 
-        System.out.println("firstDayOfWeek: " + dt.getDayOfWeek()); // getDayOfWeek() : 주어진 날짜가 무슨 요일인지
+        System.out.println("firstDayOfWeek: " + fistDayOfWeek);
         System.out.println("lastDayOfWeek: " + lastDayOfWeek);
     }
 }

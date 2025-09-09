@@ -1,15 +1,16 @@
 package time.test;
 
-import java.time.LocalDateTime;
-import java.time.ZoneId;
-import java.time.ZonedDateTime;
+import java.time.*;
 
 public class TestZone {
 
     public static void main(String[] args) {
         String zone = "Asia/Seoul";
         LocalDateTime now = LocalDateTime.of(2024,1,1,9,00,00);
+        // ZoneDateTime soulTime ZonedDateTime.of(LocalDate.of(2024,1,1), LocalTime.of(9,0), ZoneId.of("Asia/Seoul"));
 
+        // ZonedDateTime londonTime = seoulTime.withZoneSameInstant(ZoneId.of("Europe/London"));
+        // ZoneDateTime으로 풀어본다면 with를 통해 변경이 가능하다.
         ZoneId LondonZoneId = ZoneId.of("Europe/London");
         ZoneId NewYorkZoneId = ZoneId.of("America/New_York");
 

@@ -11,8 +11,11 @@ public class TestBetween {
         LocalDate endDate = LocalDate.of(2024, 11, 21);
 
         Period between = Period.between(startDate, endDate);
+        System.out.println("startDate = " + startDate);
+        System.out.println("endDate = " + endDate);
         System.out.println("남은 기간 : " + between.getYears() + "년 " + between.getMonths() + "개월 " + between.getDays() + "일");
 
+        // ChronoUnit.DAYS는 그 일자만 바로 구할 수 있다.(이 사이에 날짜가 몇개냐)
         long DaysBetween = ChronoUnit.DAYS.between(startDate, endDate);
         System.out.println("디데이 : " + DaysBetween + "일 남음");
     }
