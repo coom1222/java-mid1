@@ -3,7 +3,7 @@ package exception.ex1;
 public class NetworkClientV1 {
 
     private final String address;
-    public boolean connectError;
+    public boolean connectError;    // 기본값은 False
     public boolean sendError;
 
     public NetworkClientV1(String address) {
@@ -37,10 +37,10 @@ public class NetworkClientV1 {
     }
 
     public void initError(String data) {
-        if (data.contains("error1")) {
-            connectError = true;
+        if (data.contains("error1")) {  // 문자열이 "error1" 을 가지고 있으면
+            connectError = true;    // connectError 를 true로 활성화
         }
-        if (data.contains("error2")) {
+        if (data.contains("error2")) {  // 문자열이 "error2" 을 가지고 있으면
             sendError = true;
         }
     }

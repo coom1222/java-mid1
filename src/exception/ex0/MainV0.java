@@ -8,6 +8,7 @@ public class MainV0 {
         NetworkServiceV0 networkService = new NetworkServiceV0();
 
         Scanner scanner = new Scanner(System.in);
+
         while (true) {
             System.out.print("전송할 문자: ");
             String input = scanner.nextLine();
@@ -17,6 +18,6 @@ public class MainV0 {
             networkService.sendMassage(input);
             System.out.println();
         }
-        System.out.println("프로그램 종료");
+        System.out.println("프로그램 종료");  // exit 입력시 프로그램 종료
     }
 }
