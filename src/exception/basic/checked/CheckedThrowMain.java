@@ -1,4 +1,4 @@
-package exception.checked;
+package exception.basic.checked;
 
 public class CheckedThrowMain {
 
