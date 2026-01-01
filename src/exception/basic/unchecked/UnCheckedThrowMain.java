@@ -4,7 +4,7 @@ public class UnCheckedThrowMain {
 
     public static void main(String[] args) {
         Service service = new Service();
-        service.callThrow();
+        service.callCatch();
         System.out.println("정상종료");
     }
 }
