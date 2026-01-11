@@ -19,7 +19,7 @@ public class NetworkServiceV2_5 {
     }
 }
 /**
- * tyy ~ catch ~ finally 구조는 정상흐름, 예외흐름, 마무리 흐름(반드시 호출해야 하는)을 제공한다.
+ * try ~ catch ~ finally 구조는 정상흐름, 예외흐름, 마무리 흐름(반드시 호출해야 하는)을 제공한다.
  * try를 시작하기만 하면, finally 코드 블럭은 어떤 경우라도 반드시 호출된다.
  * try, catch 안에서 잡을 수 없는 예외가 발생해도 finally는 반드시 호출된다.
  */
