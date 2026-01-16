@@ -21,7 +21,7 @@ public class NetworkServiceV4 {
 }
 
 /**
- * 언체크 예외이므로 throws를 사용하지 않는다.
+ * RuntimeError는 언체크 예외이므로 throws를 사용하지 않는다.
  * -> 해당 오류들을 잡아도 복구할 수 없다.
  * 이겋게 해결할 수 없는 예외들은 다른 곳에서 공통으로 처리된다.
  */
